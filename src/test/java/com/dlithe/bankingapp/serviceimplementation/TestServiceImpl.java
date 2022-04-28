@@ -1,10 +1,17 @@
 package com.dlithe.bankingapp.serviceimplementation;
 
+import com.dlithe.bankingapp.dto.PatientDetailsRequest;
 import com.dlithe.bankingapp.service.TestService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TestServiceImpl implements TestService {
+    @Override
+    public String registerpatient(PatientDetailsRequest patientDetailsRequest) {
+        System.out.println(patientDetailsRequest);
+        return null;
+    }
+
     @Override
     public String fetchProductDetails(String productName) {
         if (productName != null) {
@@ -25,6 +32,8 @@ public class TestServiceImpl implements TestService {
         }
 
     }
+
+
 
 }
 
