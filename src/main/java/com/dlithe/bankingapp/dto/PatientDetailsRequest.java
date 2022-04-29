@@ -11,9 +11,11 @@ import lombok.ToString;
 @EqualsAndHashCode
 @ToString
 public class PatientDetailsRequest {
-    private String firstName;
-    private String lastName;
-    private String mobileNumber;
-    private String disease;
+
+    private int id;
+    private String name;
+    private String age;
+//    private String mobileNumber;
+//    private String disease;
 
 }
